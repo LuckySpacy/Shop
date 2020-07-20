@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="styleleftpanel.css" type="text/css">
+        <title>Smartwatchfilter</title>
+    </head>
+    <body>
+        
+        <script>
+        function doalert(checkboxElem){
+        if(checkboxElem.checked) {
+        alert('checked');
+        }else{
+            alert('unchecked');
+            }
+        }
+        </script>            
+
+        
+        <div id="leftpanel">
+            <div class="checkbox">
+                <p> Hersteller </p>    
+                <div id="scrollbox">
+                    <input type="checkbox" id = 1 name="Amazfit" value="1" onchange="doalert(this)">
+                    <label for="1">Amazfit<br></label>
+                    <input type="checkbox" id = 2 name="BANAUS" value="2">
+                    <label for="2">BANAUS<br></label>
+                    <input type="checkbox" id = 3 name="Garmin" value="3">
+                    <label for="3">Garmin<br></label>
+                    <input type="checkbox" id = 4 name="HUAWEI" value="4">
+                    <label for="4">HUAWEI<br></label>
+                    <input type="checkbox" id = 5 name="LG Electronics" value="5">
+                    <label for="5">LG Electronics<br></label>
+                    <input type="checkbox" id = 6 name="Polar" value="6">
+                    <label for="6">Polar<br></label>
+                    <input type="checkbox" id = 7 name="Samsung" value="7">
+                    <label for="7">Samsung<br></label>
+                    <input type="checkbox" id = 8 name="Smartwatch" value="8">
+                    <label for="8">Smartwatch<br></label>
+                    <input type="checkbox" id = 9 name="Sony" value="9">
+                    <label for="9">Sony<br></label>
+                    <input type="checkbox" id = 10 name="Tickwatch" value="10">
+                    <label for="10">Tickwatch<br></label>
+                </div>                        
+            </div>
+            
+            <div class="checkbox">
+                <p> Programme </p>    
+                <div id="scrollbox">
+                    <input type="checkbox" id = 1 name="Anruf" value="1" onchange="doalert(this)">
+                    <label for="1">Anrufbeantworter<br></label>
+                    <input type="checkbox" id = 2 name="Bluetooth" value="2">
+                    <label for="2">Bluetooth<br></label>
+                    <input type="checkbox" id = 3 name="EMail" value="3">
+                    <label for="3">EMail<br></label>
+                    <input type="checkbox" id = 4 name="Erinnerung" value="4">
+                    <label for="4">Erinnerung<br></label>
+                    <input type="checkbox" id = 5 name="Facebook" value="5">
+                    <label for="5">Facebook<br></label>
+                    <input type="checkbox" id = 6 name="Geschwind" value="6">
+                    <label for="6">Geschwindigkeitsmesser<br></label>
+                    <input type="checkbox" id = 7 name="GoogleKarte" value="7">
+                    <label for="7">Google Karte<br></label>
+                    <input type="checkbox" id = 8 name="GooglePay" value="8">
+                    <label for="8">Google Pay<br></label>
+                    <input type="checkbox" id = 9 name="GooglePayStore" value="9">
+                    <label for="9">Google Play Store<br></label>
+                    <input type="checkbox" id = 10 name="Google Assistent" value="10">
+                    <label for="10">Google Assistent<br></label>
+                </div>                        
+            </div>
+            
+        </div>
+    </body>
+</html>

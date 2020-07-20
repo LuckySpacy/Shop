@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+#wrapper{
+    width:960px;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    background-color: antiquewhite;
+}
+header {
+    /*height: 10px; */
+    background-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+leftpanel {
+    position: relative;
+    width:180px;
+    float: left;
+    background: green;
+    min-height: 100%;
+}
+section {
+    width: 780px;
+    float: right;
+    background-color: azure;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100;
+    background-color: yellow;
+    /*height: 50px;*/
+    /*clear:both;
+    padding: 70px, 0;
+    background-color: orange;
+    position: fixed;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    */
+        
+}

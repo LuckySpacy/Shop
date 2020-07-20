@@ -1,0 +1,60 @@
+#rightpanel {
+    background-color: orange;
+	  width: 100%;
+		margin-bottom: 35px;
+	/*
+	  height: 1000px;
+    float: left;
+	  width: 80%;
+	  max-width: 10%;
+	  max-width: 83%;
+	 max-height: 100%;
+	  margin: 0, auto;
+	height: 100%;
+	 overflow:auto;
+    width: auto;
+    margin: 0, auto;
+    min-height: 100%;	
+	  position: static;
+	*/
+}
+
+.datenzeile {
+	background-color: blueviolet;
+	margin-bottom: 10px;
+ 	font-size: 18px;
+	font-family:verdana;
+	height: 100px;
+	/*
+	clear: both;
+	width:500px;
+  height: 300px;
+	*/
+}
+.datenzeilebild {
+	background-color: red;
+	width:100px;
+	float: left;
+	/*
+	clear: both;
+	width:500px;
+	float: left;
+  height: 100px;
+	*/
+}
+.datenzeiletext {
+	background-color: blue;
+	/*
+	float: left;
+	float: left;
+	clear: both;
+	width:500px;
+  height: 100px;
+	*/
+}
+
+.datenzeiletext p {
+		font-size: 30px;
+	/*
+	*/
+}

@@ -1,0 +1,98 @@
+@charset "ISO-8859-1";
+
+
+#navigation {
+	top: 0;
+	position:fixed;
+	z-index: 10;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(250,250,250, 0.8);
+}
+
+
+#menu{
+	float: right;
+	margin-top: 44px;
+	margin-right: 30px;
+}
+
+#menu a{
+	padding-right: 30px;
+	text-decoration: none;
+	color: #274e71;
+	font-weight: 700;
+	padding-top: 35px;
+}
+
+#menu a:hover {
+	border-top: solid white 5px;
+}
+
+#banner {
+	width: 100%;
+	height: 300px;
+	background: url(picture/banner_smartwatch.jpg);
+	background-size:cover;
+	/*object-fit: contain;*/
+	background-repeat: no-repeat;
+	/*margin-top: 100px;*/
+}
+
+#leftbox { 
+	float:left;  
+    background:Red; 
+    width:200px; 
+    height:800px; 
+}
+
+#leftbox a {
+	font-family: Times New Roman  ;
+	margin-Left: 20px;
+	font-size: 1.2em;
+	/*font-size: 3em;*/
+	line-height: 1.5;
+	color: clBlack;
+}
+
+#leftbox p {
+	font-family: Times New Roman  ;
+	margin-Left: 20px;
+	margin-bottom: 0px;
+	font-size: 1.2em;
+	/*font-size: 3em;*/
+	line-height: 1.5;
+	color: blue;
+}
+
+#scrollbox {
+	font-family: Times New Roman  ;
+	margin-Left: 20px;
+	margin-Right: 10px;
+	line-height: 1.5;
+	background-color: Yellow;
+    overflow:auto;	
+	height: 100px;
+}
+
+#label {
+	font-family: Wingdings  ;
+	font-size: 10px;
+}
+	
+
+#scrollbox label {
+	font-family: Times New Roman  ;
+	font-size: 12px;
+	font-color: white;
+}
+
+
+ 
+ #centerbox { 
+	margin-top: -16px;
+	float:center;  
+	background:Green; 
+}
+
+

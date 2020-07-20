@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Smartwatch</title>
+<link href="style3.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="navigation">
+  <div class="wrapper">
+  	<p id="menu">
+    	<a href="#">Home</a>
+    	<a href="#">Über uns</a>
+    	<a href="#">Kontakt</a>
+    	<a href="#">Impressum</a>
+  	</p>
+  </div>
+</div>
+
+
+<div id ="banner">
+</div>
+
+<div id = "leftbox">
+  <!-- <a href="" onclick="runMyFunction()">Hersteller</a><br>*/ -->
+  <p id="hersteller">Hersteller</p>  
+  <div id="scrollbox">
+  	<input type="checkbox" id="Sony" name="Sony" value="Sony" checked>  
+  	<label for="Sony">Sony</label><br>
+  	<input type="checkbox" id="Apple" name="Apple" value="Apple">  
+  	<label for="Apple">Apple</label><br>
+  	<input type="checkbox" id="Huawei" name="Huawei" value="Huawei">  
+  	<label for="Huawei">Huawei</label><br>
+  	<input type="checkbox" id="Samsung" name="Samsung" value="Samsung">  
+  	<label for="Samsung">Samsung</label><br>
+  </div>
+  
+  <a href="">Fitness</a><br>
+  <a href="">Programme</a><br>
+  
+  <div id = "buttonbox">
+    <form action="" method="post">
+      <input type="submit" name="suche" value="Absenden"/>
+    </form>  
+  </div>
+  
+</div>
+
+
+
+<div id = "centerbox">
+<p>
+Hersteller <br> 
+Fitness <br> 
+
+</p>
+</div>
+
+
+<?php
+
+  function meine_funktion() {
+      // Deine PHP-Funktion, z. B.:
+      echo 'Hallo Welt!'; 
+  }
+
+  if(isset($_POST["suche"])) {
+      meine_funktion();  
+  }
+
+
+
+?>
+
+</body>
+</html>
+
+
