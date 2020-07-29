@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Smartwatch.css" type="text/css">
     <link rel="stylesheet" href="stylerightpanel.css" type="text/css">
     <link rel="stylesheet" href="blaettern.css" type="text/css">
+		<script src="funktionen.js"></script>
 		<title>Smartwatchfilter</title>
 	</head>
 	<body>

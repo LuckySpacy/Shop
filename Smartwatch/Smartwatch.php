@@ -1,6 +1,7 @@
 <?php
 		
 	include 'smartwatchkopf.php';
+	include 'variablen.php';
   /*echo('<div id="main">');*/
   /*echo('Hallo');*/
 	include 'leftpanel.php';
