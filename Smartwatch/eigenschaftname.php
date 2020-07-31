@@ -8,6 +8,7 @@
     public $Labelname;
     public $Id;
     private $ArtikelEigenschaftList = array();
+    private $AnzahlCheckboxen;
     public function __construct($Name, $Listenname, $Blaettername, $Id, $Labelname){
       $this->ArtikelEigenschaftList = '';
       $this->CheckedListe = '';
@@ -17,6 +18,7 @@
       $this->Blaettername = $Blaettername;
       $this->Labelname = $Labelname;
       $this->Id = $Id;
+      $this->AnzahlCheckboxen = 0;
     }
     public function FuelleListeFromPost() {
       if (isset($_POST[$this->Listenname])){
@@ -100,7 +102,8 @@
         if (empty($this->CheckedListe) == false) {$this->ShowCheckbox($zeile["EI_ID"],  utf8_encode($zeile["EI_MATCH"]), $this->CheckedListe, $this->Checkboxname);}
       }
       echo('</div>');
-  }
+    }
+  
 
   public function ErzeugeCheckboxen($ArtikeleigenschaftGeladeneArtikelList){
     if ($ArtikeleigenschaftGeladeneArtikelList->getInListe($this->Id) == '') {return;}
@@ -109,7 +112,20 @@
     echo('<div class="checkbox">');
     echo('<p>'.$this->Labelname.'</p>');  
     $this->ErzeugeScrollbox();
+    $this->AnzahlCheckboxen = count($this->ArtikelEigenschaftList);
     echo('</div>');
+  }
+
+  public function SetzeCheckboxHoehe(){
+    ?>
+    <script type="text/javascript"> {
+      let Labelname = "<?php echo($this->Labelname);?>";
+      let Anzahl = "<?php echo($this->AnzahlCheckboxen);?>";
+      //alert('SetzeCheckboxHoehe');
+      SetzeCheckboxHoehe(Labelname, Anzahl);
+      }
+    </script>
+    <?php
   }
 
   }

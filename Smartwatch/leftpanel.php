@@ -39,7 +39,11 @@ echo('</div>');
 
 foreach($EigenschaftnameList as $Liste) {
 	$Liste->ErzeugeCheckboxen($Artikellist->ArtikelEigenschaftList);
+	$Liste->SetzeCheckboxHoehe();
 }
+
+
+$EigenschaftnameList[1]->SetzeCheckboxHoehe();
 
 echo('<div id="Filterbutton">');
 echo('<input id="Filterbtn" type="submit" name="suche" value="Filtern"/>');
