@@ -13,8 +13,14 @@ function SetzeHidden ($Liste, $HiddenName) {
 global $LastRow;
 global $zur;
 global $MaxRow;
-global $AnzahlDatensaetze;
 
+
+echo('LastRow = '.$LastRow);
+echo('<br>');
+echo('MaxRow = '.$MaxRow);
+echo('<br>');
+echo('Anzahl Datensätze = '.$Artikellist->AnzahlDatensaetze);
+echo('<br>');
 
 echo('<form name="vorzurueck" action="" method="post">');
 
@@ -24,7 +30,7 @@ if ($CheckAnzahl > 1) {
 	echo('<input type="submit" name="zuruck" value="Zurück"/>');
 }  
 
-if ($LastRow < $AnzahlDatensaetze) {
+if ($LastRow < $Artikellist->AnzahlDatensaetze) {
 	echo('<input type="submit" name="vor" value="Weiter"/>');
 }
 
@@ -39,7 +45,6 @@ foreach($EigenschaftnameList as $Liste) {
 }
 
 
-echo('<input type= "hidden" name="LastRow" value="'.$LastRow.'"');
 echo('<input type= "hidden" name="LastRow" value="'.$LastRow.'"');
 echo('</div>');
 

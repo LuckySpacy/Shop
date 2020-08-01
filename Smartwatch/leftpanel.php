@@ -10,6 +10,8 @@
 	
 		if (isset($_POST['LastRow'])){$LastRow = $_POST['LastRow'];}
 
+		echo('LastRow = '.$LastRow.'<br>');
+
 
 	//var_dump($_POST);
 

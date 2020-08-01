@@ -1,6 +1,8 @@
 <?php
   include 'eigenschaftname.php';
   include 'artikellist.php';
+  include 'funktionen.php';
+
   $EigenschaftnameList = array();
 
   function AddEigenschaftList($Name, $Variablename, $Id){
@@ -31,5 +33,7 @@
   AddEigenschaftList('Anwendungsart', 'Anwendungsart', 20);
 
   $Artikellist = new Artikellist();
+
+  
 
 ?>
