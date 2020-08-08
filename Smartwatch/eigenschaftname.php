@@ -77,17 +77,19 @@
       $con = new mysqli($servername, $user, $pw, $db);
       if ($con->connect_error) {
         die('Verbindung zur Datenbank ist fehlgeschlagen'.$con->connect_error);}
-      $sql = 'select distinct EI_ID, EI_MATCH from eigenschaft'.
+        $sql = 'select distinct EI_ID, EI_MATCH from eigenschaft'.
              ' join artikeleigenschaft on ae_ei_id = ei_id '. 
              ' where ei_sa_id = 1'.
              ' and ei_id in '.$InListe.
              ' order by ei_match';
             // ' and ei_en_id = '.$this->Id.' order by ei_match';
 
-      $res = $con->query($sql);
+      //echo($sql.'<br>');
+            $res = $con->query($sql);
       if (mysqli_num_rows($res) > 0) {
         while ($row = mysqli_fetch_assoc($res)) {
           //print_r($row);
+          //array_push($this->ArtikelEigenschaftList, $row);
           $this->ArtikelEigenschaftList[] = $row;
         }
       }
@@ -106,9 +108,14 @@
   
 
   public function ErzeugeCheckboxen($ArtikeleigenschaftGeladeneArtikelList){
-    if ($ArtikeleigenschaftGeladeneArtikelList->getInListe($this->Id) == '') {return;}
+    if ($ArtikeleigenschaftGeladeneArtikelList->getInListe($this->Id) == '') {
+      return;
+    }
+    $this->ArtikelEigenschaftList = array();
     $this->LadeArtikelEigenschaftList($ArtikeleigenschaftGeladeneArtikelList);
-    if (empty($this->ArtikelEigenschaftList) == true) {return;}
+    if (empty($this->ArtikelEigenschaftList) == true) {
+      return;
+    }
     echo('<div class="checkbox">');
     echo('<p>'.$this->Labelname.'</p>');  
     $this->ErzeugeScrollbox();

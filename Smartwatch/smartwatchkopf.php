@@ -14,7 +14,7 @@
 	<body>
 		<div id="header">
 			<p id="headermenu">
-				<a href="#">Home </a>
-				<a href="#">Kontakt </a>
+				<a href="https://smartwatchfilter.com">Home </a>
+				<a href="https://smartwatchfilter.com/?page_id=16">Kontakt </a>
 			</p>
 		</div>

@@ -1,5 +1,5 @@
 <?php
-		
+ // echo 'Die aktuelle PHP Version ist ' . phpversion();
 	include 'smartwatchkopf.php';
 	include 'variablen.php';
   /*echo('<div id="main">');*/

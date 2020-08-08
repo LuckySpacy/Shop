@@ -8,7 +8,9 @@
     background-color: orange;
     float:left;
     width: 200px;
+    padding-bottom: 50px;
 	/*
+    background-color: orange;
 	  margin: 0, auto;
 	  min-height: 100%;	
 	*/
@@ -38,6 +40,7 @@
     margin-left: 5px;
 }
 
+/*
 .checkbox1 {
     margin-top: 10px;
     margin-left: 10px;
@@ -58,7 +61,7 @@
     margin-top: 2px;
     margin-left: 5px;
 }
-
+*/
 
 #scrollbox {
     /*background-color: red;*/

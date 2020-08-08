@@ -20,11 +20,19 @@
 }
 
 .datenzeile {
-	background-color: blueviolet;
+	border: solid;
+	border-top-color: white;
+	border-left-color: white;
+	border-bottom-color: silver;
+	border-right-color: white;
+	border-width: thin;
+	background-color: white;
 	margin-bottom: 10px;
  	font-size: 18px;
 	font-family:verdana;
 	height: 100px;
+	margin-left: 200px;
+	text-decoration: none;
 	/*
 	clear: both;
 	width:500px;
@@ -32,19 +40,35 @@
 	*/
 }
 .datenzeilebild {
-	background-color: red;
 	width:100px;
+	height: 100px;
 	float: left;
+	text-decoration: none;
 	/*
+	background-color: white;
 	clear: both;
 	width:500px;
 	float: left;
   height: 100px;
 	*/
 }
+
+.datenzeilebild a {
+	text-decoration: none;
+} 
+
+.datenzeilebild img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+} 
+
 .datenzeiletext {
 	background-color: blue;
-	/*
+	text-decoration: none;
+/*
+	border-color: black;
+	border-width: thin;
 	float: left;
 	float: left;
 	clear: both;
@@ -55,6 +79,7 @@
 
 .datenzeiletext p {
 		font-size: 30px;
+		text-decoration: none;
 	/*
 	*/
 }

@@ -15,18 +15,19 @@ global $zur;
 global $MaxRow;
 
 
+/*
 echo('LastRow = '.$LastRow);
 echo('<br>');
 echo('MaxRow = '.$MaxRow);
 echo('<br>');
 echo('Anzahl Datensätze = '.$Artikellist->AnzahlDatensaetze);
 echo('<br>');
-
+*/
 echo('<form name="vorzurueck" action="" method="post">');
 
 echo('<div id="steuerung">');
 $CheckAnzahl = $LastRow - $MaxRow;
-if ($CheckAnzahl > 1) {
+if ($CheckAnzahl >= 1) {
 	echo('<input type="submit" name="zuruck" value="Zurück"/>');
 }  
 

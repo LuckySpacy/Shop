@@ -5,7 +5,6 @@
 
 
 //$Artikellist->LeseArtikel($EigenschaftnameList);
-echo('Zur='.$zur.'<br>');
 $SatzZaehler = 0;
 $SatzZaehler2 = 0;
 
@@ -20,7 +19,8 @@ foreach($Artikellist->Liste as $Artikel) {
 	$SatzZaehler2++;
 	echo('<div class = "datenzeile">');
 		echo('<div class = "datenzeilebild">');
-			echo ('<img src="'.$Artikel->ImageUrl.'" width="100" height="100">');
+		  echo('<a href="'.$Artikel->Webseite.'" style="text-decoration: none;">');
+			echo ('<img src="'.$Artikel->ImageUrl.'">');
 		echo('</div>');
 		echo('<div id = "datenzeiletext">');
 			echo('<p>');
