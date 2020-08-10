@@ -17,6 +17,14 @@ function getCheckbox(Labelname) {
 
 function SetzeCheckboxHoehe(Labelname, Anzahl) {
 	let Checkbox = getCheckbox(Labelname);
+	let Kopfhoehe = 2.0;
+	let Checkboxeinzelhoehe = 1.6;
+	let Checkboxgesamthoehe = Checkboxeinzelhoehe * Anzahl;
+	let Boxhoehe = Checkboxgesamthoehe + Kopfhoehe;
+	if (Boxhoehe > 12) {Boxhoehe = 12;}
+	Checkbox.style.height = Boxhoehe + 'em';
+	/*
+	let Checkbox = getCheckbox(Labelname);
 	let Kopfhoehe = 22;
 	let Checkboxeinzelhoehe = 17;
 	let Checkboxgesamthoehe = 17 * Anzahl;
@@ -25,5 +33,6 @@ function SetzeCheckboxHoehe(Labelname, Anzahl) {
 	//alert(Boxhoehe);
 	Checkbox.style.height = Boxhoehe + 'px';
 	//Checkbox.style.height = '200px';
+	*/
 }
 

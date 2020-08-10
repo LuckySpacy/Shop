@@ -16,5 +16,7 @@
 			<p id="headermenu">
 				<a href="https://smartwatchfilter.com">Home </a>
 				<a href="https://smartwatchfilter.com/?page_id=16">Kontakt </a>
+				<a href="https://amzn.to/2PEOWsi">Neuheiten (letzter Monat) </a>
+				<a href="https://smartwatchfilter.com/info/">Info </a>
 			</p>
 		</div>
